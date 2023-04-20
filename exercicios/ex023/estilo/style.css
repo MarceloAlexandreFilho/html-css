@@ -2,11 +2,13 @@
 
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
+    width: 98.5vw;
+    height: 100vh;
 }
 
 h1 {
@@ -17,7 +19,7 @@ h1 {
 table {
     margin: auto;
     display: flexbox;
-    width: 450px;
+    width: 400px;
     border-collapse: collapse;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.552);
@@ -74,7 +76,7 @@ footer {
 
 p {
     
-    margin-top: 10px;
+    margin: 8px;
     font-size: 0.8em;
     text-align: center;
     padding: 5px;
