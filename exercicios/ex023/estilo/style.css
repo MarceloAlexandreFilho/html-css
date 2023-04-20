@@ -57,7 +57,7 @@ tbody > tr > td > a{
     text-decoration: none;
 }
 
-tbody > tr > td > a:hover{
+td > a:hover{
     text-decoration: underline;
 }
 
