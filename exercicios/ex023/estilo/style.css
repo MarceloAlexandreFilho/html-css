@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 98.5vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -71,6 +71,7 @@ img {
 }
 
 footer {
+    width: 100vw;
     background-color: rgb(42, 43, 43);;
 }
 
