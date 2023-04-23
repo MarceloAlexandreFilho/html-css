@@ -4,89 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Formulário</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-
-
-        form {
-            position: relative;
-            width: 200px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid rgba(0, 0, 0, 0.486);
-            border-radius: 5px;
-            background-image: linear-gradient(to right, rgba(0, 0, 255, 0.589), rgba(255, 0, 0, 0.464));
-        }
-
-        p {
-            padding: 10px;
-            
-        }
-
-        #casar {
-            text-align: center;
-            width: 200px;
-            border: 1px solid red;
-            background-image: linear-gradient(to left, rgb(105, 159, 218), rgb(95, 85, 179));
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        #teste {
-            height: 100px;
-            border-radius: 10px;
-            
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            
-            padding: 5px;
-        }
-
-        #sim {
-            border: 1px solid black;
-            font-weight: bold;
-            background-color: green;
-            position: absolute;
-            top: 80px;
-            left: 60px;
-            padding-top: 5px;
-            padding-bottom: 4px;
-            padding-left: 2px;
-            padding-right: 2px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.367);
-        }
-
-        #sim:hover {
-
-            transform: translate(300px, 0);
-            transition: transform 2s;
-        }
-
-        #nao {
-            border: 1px solid black;
-            font-weight: bold;
-            background-color: red;
-            position: absolute;
-            top: 80px;
-            left: 140px;
-            padding-top: 5px;
-            padding-bottom: 4px; 
-            border-radius: 5px;
-        }
-
-
-
-    </style>
 </head>
 <body>
     <h1>Teste de formulário</h1>
@@ -116,5 +35,35 @@
             <a href="https://nao">NÃO</a>
         </div>
     </form>
+    <form action="cadastro.php" method="get" id="form03">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+
+        </p>
+        <p>
+            <label for="imes">Périodo Letivo</label>
+            <input type="month" name="mes" id="imes" value="2023-04">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        
+    </form>
+
 </body>
 </html>
